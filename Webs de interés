@@ -1,17 +1,18 @@
 BIOSTARS (https://www.biostars.org) --> Comunidad sobre bioinformática.
 SEQANSWERS (http://seqanswers.com) --> Comunidad sobre secuenciación de nueva generación.
-CGHub	https://cghub.ucsc.edu/	Comprehensive data repository; huge data size	★★★★★	[1]
-EGA	https://www.ebi.ac.uk/ega/	Comprehensive data repository; huge data size	★★★★★	
-COSMIC	http://cancer.sanger.ac.uk	Largest somatic mutation database; genome sequencing paper curation	★★★★★	[2]
-CPRG	http://www.broadinstitute.org/software/cprg	Interface for cancer program resources	★★★★☆	
-GDAC	http://gdac.broadinstitute.org/	Data analysis; automatic pipelines; user-friendly reports	★★★★☆	[3]
-SNP500Cancer	http://snp500cancer.nci.nih.gov	Sequence and genotype verification of SNPs	★★★★☆	[4]
-canEvolve	www.canevolve.org/	Comprehensive analysis of tumor profile; Data from 90 studies involving more than 10,000 patients	★★★★☆	[5]
-MethyCancer	http://methycancer.psych.ac.cn	Relationship among DNA methylation, gene expression and cancer	★★★★☆	[6]
-SomamiR	http://compbio.uthsc.edu/SomamiR/	Correlation between somatic mutation and microRNA; genome-wide displaying	★★★★☆	[7]
-cBioPortal	http://www.cbioportal.org/public-portal/	Graphical summaries; gene alteration; processed data; visualization	★★★★★	[8]
+CGHub	https://cghub.ucsc.edu/	Comprehensive data repository; huge data size
+EGA	https://www.ebi.ac.uk/ega/	Comprehensive data repository; huge data size		
+COSMIC	http://cancer.sanger.ac.uk	Largest somatic mutation database; genome sequencing paper curation	
+CPRG	http://www.broadinstitute.org/software/cprg	Interface for cancer program resources
+GDAC	http://gdac.broadinstitute.org/	Data analysis; automatic pipelines; user-friendly reports	
+SNP500Cancer	http://snp500cancer.nci.nih.gov	Sequence and genotype verification of SNPs	
+canEvolve	www.canevolve.org/	Comprehensive analysis of tumor profile; Data from 90 studies involving more than 10,000 patients	
+MethyCancer	http://methycancer.psych.ac.cn	Relationship among DNA methylation, gene expression and cancer	
+SomamiR	http://compbio.uthsc.edu/SomamiR/	Correlation between somatic mutation and microRNA; genome-wide displaying	
+cBioPortal	http://www.cbioportal.org/public-portal/	Graphical summaries; gene alteration; processed data; visualization	
 UCSC Cancer Genomics Browser	https://genome-cancer.soe.ucsc.edu/	Clinical information; gene expression; copy number variation; visualization	★★★★☆	[9]
-CGWB	https://cgwb.nci.nih.gov/	Visualization; gene mutation and variation; automated analysis pipeline	★★★★☆	[10]
-GDSC	http://www.cancerrxgene.org	Drug sensitivity information; drug response information	★★★★☆	[11]
-canSAR	https://cansar.icr.ac.uk/	Multidisciplinary information; drug discovery	★★★★☆	[12]
-NONCODE	http://www.noncode.org/	ncRNAs; lncRNAs; up-to-date and comprehensive resource	★★★★☆	[13,14]
+CGWB	https://cgwb.nci.nih.gov/	Visualization; gene mutation and variation; automated analysis pipeline	
+GDSC	http://www.cancerrxgene.org	Drug sensitivity information; drug response information	
+canSAR	https://cansar.icr.ac.uk/	Multidisciplinary information; drug discovery	
+NONCODE	http://www.noncode.org/	ncRNAs; lncRNAs; up-to-date and comprehensive resource	
+Website bio-itworld.com 
