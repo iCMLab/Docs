@@ -9,11 +9,15 @@ For many statistical analyses, such as meta-analyses of GWAS and genotype imputa
 ## DNA strand designations
 •	# ILMN Strand, a.k.a. Design Strand: The strand used by Illumina to design probes based on thermodynamic stability and locus specificity according to NCBI BLAST. For this reason, it can differ from the Customer/ Source strand.
 
-•	# Forward/Reverse (Fwd/Rev) Strand: Used by dbSNP, Fwd/Rev designations can change with NCBI Genome Build updates, so Genome Build must be specified when reporting Fwd/Rev strands. 1. For SNPs in standard array products, Fwd strand = Source strand, and originates from dbSNP. 2. For custom array product SNPs without rsid’s, the customer can identify the Source strand as Fwd or Rev, based on their own criteria. Illumina custom product files use the customer’s Fwd/Rev designations. Note: The Fwd strand, as identified in Illumina standard product files, should not be confused with Plus (+) strand, which HapMap interchangeably calls the “forward strand.”
+•	# Forward/Reverse (Fwd/Rev) Strand: Used by dbSNP, Fwd/Rev designations can change with NCBI Genome Build updates, so Genome Build must be specified when reporting Fwd/Rev strands:
+1. For SNPs in standard array products, Fwd strand = Source strand, and originates from dbSNP.
+2. For custom array product SNPs without rsid’s, the customer can identify the Source strand as Fwd or Rev, based on their own criteria. Illumina custom product files use the customer’s Fwd/Rev designations. Note: The Fwd strand, as identified in Illumina standard product files, should not be confused with Plus (+) strand, which HapMap interchangeably calls the “forward strand.”
 
-•	# Plus/Minus (+/-) Strand: The standard designation for all eukaryotic organisms used by HapMapand 1000 Genomes Project. The 5′ end of the (+) strand is at the tip of the short arm (p arm) of the chromosome and the 5′ end of the (-) strand is at the tip of the long arm (q arm). (+/-) designations can change with NCBI Genome Build updates, so Genome Build must be specified when reporting (+/-) strands.
+•	# Plus/Minus (+/-) Strand: The standard designation for all eukaryotic organisms used by HapMap and 1000 Genomes Project. The 5′ end of the (+) strand is at the tip of the short arm (p arm) of the chromosome and the 5′ end of the (-) strand is at the tip of the long arm (q arm). (+/-) designations can change with NCBI Genome Build updates, so Genome Build must be specified when reporting (+/-) strands.
 
-•	# Source Strand: Same as the Customer strand. The strand submitted to the Illumina designer for probe design. 1. For standard SNPs, it is the Fwd strand as reported in the source database (i.e., dbSNP). 2. Custom content can be reported as rsid’s or as the DNA sequences or chromosomal regions, depending on the format submitted by the customer.
+•	# Source Strand: Same as the Customer strand. The strand submitted to the Illumina designer for probe design:
+1. For standard SNPs, it is the Fwd strand as reported in the source database (i.e., dbSNP).
+2. Custom content can be reported as rsid’s or as the DNA sequences or chromosomal regions, depending on the format submitted by the customer.
 
 •	# Top/Bottom (Top/Bot) Strand:Top/Bot nomenclature was developed by Illumina using sequence-based context to assign strand designations that does not change regardless of database or genome assembly used. (e.g., depending on the NCBI Genome Build referenced, strand and allele designations can change). Top/Bot is not directly related to Fwd/Rev or (+/-).Top/Bot strand is determined by examining the SNP and the surrounding DNA sequence and it only applies to SNPs with two possible alleles. See the Top/Bot A/B Allele bulletin for more details.
 
@@ -28,8 +32,8 @@ One solution to the problem of unknown strands is to compare the minor allele be
 
 ## Will Rayner Tools:
 Will Rayner of the Wellcome Trust Center for Human Genetics has provided a series of useful scripts that can fix the alignment of the strands.
-### STRAND issue
 
+### STRAND issue
 •	The designation of strand is an extremely important issue. The Illumina strand TOP, or front Illumina strand, IS NOT the same as the front GRCh37 strand.
 •	All genotypes must be in the forward strand of GRCh37. An easy way to get this is to export genotypes from GenomeStudio using TOP allele annotations (typical GenomeStudio output), which we ask you to update to the advance chain of compilation 37 using the scripts provided by Will Rayner in Sanger. A description of Illumina's TOP/BOT scheme is here. Will's instructions for use, including scripts, are available here.
 •	//www.well.ox.ac.uk/~wrayner/strand/
