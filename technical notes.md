@@ -46,13 +46,19 @@ It is important to have the version of the.strand file corresponding to the geno
 # CHANGE STRAND CODIFICATION: FROM “TOP/BOTTOM” TO “FORWARD/REVERSE” 
 
 ## The easiest way to process the data, is to:
+
 1- Download PLINK for Windows: http://zzz.bwh.harvard.edu/plink/dist/plink-1.07-dos.zip
+
 2-	export data from GenomeStudio as a plink data set and ensuring you are using the TOP strand: .PED + .MAP + SAMPLESHEET.
+
 3- Once you get PLINK and .ped + .map files, put it all in the same folder and open a windows terminal to get into the path. Then run PLINK with the code below:
 plink --file "name of the ped and map files without extension" --make-bed. 
+
 Example with Lugo.ped and Lugo.map: plink --file Lugo --make-bed
+
 4-	you can double check this using the chipendium tool
 http://mccarthy.well.ox.ac.uk/static/software/chipendium/  which will give the chip and strand). You have to upload .BIM file or .txt containing rsID’s to check the manifest and the strand designation to “TOP”.
+
 5-	You have to download the Strand and Position Files from here:
 https://www.well.ox.ac.uk/~wrayner/strand/GSA-24v2-0_A1-b37-strand.zip.  
 The data for each chip and genome build combination are freely downloadable. Each zip file contains three files, these are:
@@ -73,7 +79,7 @@ A script developed by Neil Robertson for updating the chromosome, position and s
 
 
 
-Usage is:
+Usage is: b
 
 •	<bed-file-stem>	is the name of your binary ped set minus the .bed, .bim or .fam extension
 •	<strand-file>	is appropriate strand file for you chip and current strand orientation (TOP, SOURCE, ILMN)
