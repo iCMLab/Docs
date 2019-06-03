@@ -46,13 +46,16 @@ It is important to have the version of the.strand file corresponding to the geno
 # CHANGE STRAND CODIFICATION: FROM “TOP/BOTTOM” TO “FORWARD/REVERSE” 
 
 ## The easiest way to process the data, is to:
- 
-1-	export them from GenomeStudio as a plink data set and ensuring you are using the TOP strand: .PED + .MAP + SAMPLESHEET
-
-2-	you can double check this using the chipendium tool
+1- Download PLINK for Windows: http://zzz.bwh.harvard.edu/plink/dist/plink-1.07-dos.zip
+2-	export data from GenomeStudio as a plink data set and ensuring you are using the TOP strand: .PED + .MAP + SAMPLESHEET.
+3- Once you get PLINK and .ped + .map files, put it all in the same folder and open a windows terminal to get into the path. Then run PLINK with the code below:
+plink --file "name of the ped and map files without extension" --make-bed. 
+Example with Lugo.ped and Lugo.map: plink --file Lugo --make-bed
+4-	you can double check this using the chipendium tool
 http://mccarthy.well.ox.ac.uk/static/software/chipendium/  which will give the chip and strand). You have to upload .BIM file or .txt containing rsID’s to check the manifest and the strand designation to “TOP”.
-
-3-	You have to download the Strand and Position Files from here: GSA-24v2-0_A1-b37-strand.zip.  The data for each chip and genome build combination are freely downloadable. Each zip file contains three files, these are:
+5-	You have to download the Strand and Position Files from here:
+https://www.well.ox.ac.uk/~wrayner/strand/GSA-24v2-0_A1-b37-strand.zip.  
+The data for each chip and genome build combination are freely downloadable. Each zip file contains three files, these are:
 .strand file
 .miss file
 .multiple file
@@ -63,7 +66,7 @@ http://mccarthy.well.ox.ac.uk/static/software/chipendium/  which will give the c
 
 .multiple file The .multiple file contains SNPs that had more than 1 high quality match (>90%) to the genome, in this instance the better match is taken for the .strand file, the number of these is reported, this is first numeric column in the file. If there are two matches of the same quality then one is chosen at random and the number of identical matches is reported, this is the second numeric column in the file.
 
-4-	Updating the strand and position. Once you have the TOP strand data file you can then use the update_build.sh script on the web site, with the corresponding strand file, this will set both the genome build as well as the strand (this strategy can be used to update data to any genome build as the TOP strand is not genome build specific). 
+6-	Updating the strand and position. Once you have the TOP strand data file you can then use the update_build.sh script on the web site, with the corresponding strand file, this will set both the genome build as well as the strand (this strategy can be used to update data to any genome build as the TOP strand is not genome build specific). 
 
 A script developed by Neil Robertson for updating the chromosome, position and strand of binary ped files using these strand and position files can be downloaded here:
 
@@ -76,7 +79,7 @@ Usage is:
 •	<strand-file>	is appropriate strand file for you chip and current strand orientation (TOP, SOURCE, ILMN)
 •	<output-file-stem>	is the name of the new output file to create again minus the .bed, .bim or .fam extension
 
-5-	After running the update_build.sh the data file will be forward strand on the genome build of choice and ready for QC and analysis. 
+7-	After running the update_build.sh the data file will be forward strand on the genome build of choice and ready for QC and analysis. 
 
-6-	If you are using imputation and have the data on genome build 37 then you can use the pre imputation checking tool (under Tools GitHub iCMLab) to verify that the data are correctly aligned with the reference panel for imputation, if you have done strand updates this is just a double check but can be useful to do to verify that everything has worked correctly.
+8-	If you are using imputation and have the data on genome build 37 then you can use the pre imputation checking tool (under Tools GitHub iCMLab) to verify that the data are correctly aligned with the reference panel for imputation, if you have done strand updates this is just a double check but can be useful to do to verify that everything has worked correctly.
 
